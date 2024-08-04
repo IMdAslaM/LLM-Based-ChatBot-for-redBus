@@ -21,7 +21,7 @@ imbalanced-learn==0.12.3
 importlib-metadata==6.8.0
 InstructorEmbedding==1.0.1
 intel-openmp==2021.4.0
-langchain==0.0.284
+langchain
 langchain-community==0.2.9
 langchain-core==0.2.22
 langchain-text-splitters==0.2.2
