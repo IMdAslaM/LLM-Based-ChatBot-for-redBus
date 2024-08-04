@@ -33,7 +33,6 @@ pandas==2.0.3
 python-dotenv==1.0.0
 pytz==2023.3
 pytz-deprecation-shim==0.1.0.post0
-pywinpty==2.0.10
 PyYAML==6.0
 safetensors==0.4.3
 scikit-learn==1.5.1
