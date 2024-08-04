@@ -19,7 +19,7 @@ vectordb_file_path="faiss_index"
 def create_vector_db():
 #Creating a vector database using FAISS
     source_column='ï»¿question'
-    loader= CSVLoader(file_path=r"C:/Users/hp/GUVI_Project/LLM_Project/redBus.csv", source_column=source_column.strip())
+    loader= CSVLoader(file_path=r"redBus.csv", source_column=source_column.strip())
     docs=loader.load()
     vectordb=FAISS.from_documents(documents=docs,embedding=instructor_embeddings)
     vectordb.save_local(vectordb_file_path)#saving a vectordb in a file to access it later
