@@ -48,7 +48,7 @@ def get_qa_chain():
                                         retriever=retriever,
                                         input_key="query",
                                         return_source_documents=True,
-                                        chain_type_kwargs=chain_type_kwargs)
+                                        chain_type_kwargs={"prompt":PROMPT})
     return chain
 
 if __name__ == "__main__":
