@@ -26,7 +26,7 @@ def create_vector_db():
 
 def get_qa_chain():
     #loading vector database from local
-    vectordb= FAISS.load_local(vectordb_file_path, instructor_embeddings) 
+    vectordb= FAISS.load_local(vectordb_file_path, instructor_embeddings,allow_dangerous=True) 
 
     retriever = vectordb.as_retriever() #used to pick similar looking embeddings from vectordb
 
