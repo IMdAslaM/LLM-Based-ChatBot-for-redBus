@@ -126,7 +126,6 @@ platformdirs==3.5.3
 prometheus-client==0.17.0
 prompt-toolkit==3.0.38
 proto-plus==1.24.0
-protobuf==3.20.3
 psutil==5.9.5
 pure-eval==0.2.2
 pyarrow==12.0.1
