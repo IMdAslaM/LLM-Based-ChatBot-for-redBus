@@ -20,8 +20,13 @@ st.markdown(" ")
 question = st.text_input("Enter your Query on redBus: ")
 
 if question:
+
+    placeholder=st.empty()
+    #st.write('Data is migrating to MongoDB🚀...')
+    placeholder.write('Thinking...')
+    time.sleep(10)
     chain= get_qa_chain()
     response = chain(question)
-
+    placeholder.empty()
     st.header("Your Solution: ")
     st.write(response["result"])
