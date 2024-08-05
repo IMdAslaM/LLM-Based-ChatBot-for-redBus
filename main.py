@@ -27,6 +27,6 @@ if question:
     time.sleep(10)
     chain= get_qa_chain()
     response = chain(question)
-    placeholder.empty()
+    # placeholder.empty()
     st.header("Your Solution: ")
     st.write(response["result"])
