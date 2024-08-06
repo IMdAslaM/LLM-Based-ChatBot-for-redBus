@@ -1,6 +1,7 @@
 import streamlit as st
 from langchain_helper import create_vector_db, get_qa_chain
 import base64
+import time
 
 st.markdown("""# Welcome to <span style="color:red">redBus</span> chatbot🤖""", unsafe_allow_html=True)
 st.markdown(" ")
